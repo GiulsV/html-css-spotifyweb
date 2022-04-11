@@ -3,14 +3,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header{
+    background-color: rgba(0, 0, 0, 0.274);
+    margin-left: 10%;
+    width: calc(100vw - 10%);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+button{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 3%;
+    color: white;
+    border:1px solid  white;
+    border-radius: 30px;
+    background-color: black;
+    padding: 1% 2%;
 }
 
 /* main */
 main{
     background-color: black;
     width: 100%;
-    height:calc(100vh - 80px);
-    
+    height:calc(100vh - 80px);   
 }
 
 
@@ -24,7 +52,7 @@ main{
     background-color: blue;
 }
 nav{
-    width: 200px;
+    width: 10%;
     height: calc(100% - 80px);
     background-color: aqua;
     position: fixed;
@@ -33,10 +61,47 @@ nav{
 }
 
 .recently{
-    margin-left: 200px;
-    margin-right: 10px;
+    margin-top: 70px;
+    margin-left: 10%;
+    width: calc(100vw - 10%);
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.recently ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.recently img{
+    width: 200px;
+    height: 200px;
+    margin: 5px 7px;
+    display: flex;
+    justify-items: space-around;  
+}
 
+.foryou{
+    margin-left: 10%;
+    width: calc(100vw - 10%);
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.popular{
+    margin-left: 10%;
+    width: calc(100vw - 10%);
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
