@@ -15,7 +15,7 @@ a{
 
 
 .text{
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 2% 2%;
 }
 h2{
@@ -32,7 +32,7 @@ h6{
 /* Header */
 header{
     background-color: rgba(0, 0, 0, 0.514);
-    margin-left: 10%;
+    margin-left: 13%;
     width: calc(100vw - 10%);
     height: 70px;
     display: flex;
@@ -50,7 +50,7 @@ button{
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-right: 3%;
+    margin-right: 6%;
     border:1px solid  white;
     border-radius: 30px;
     background-color: black;
@@ -84,9 +84,10 @@ main{
     height: 100%;
     background-color: #192231;
 }
-
-nav{
-    width: 10%;
+/* section colonna sx */
+.barrasx{
+    width: 13%;
+    /* border: 2px solid yellow; */
     height: calc(100% - 80px);
     background-color:#000000;
     color: grey;
@@ -94,11 +95,34 @@ nav{
     top: 0;
     left: 0;
 }
+/* nav{
+    border: 2px solid pink;
+} */
+.barrasx > img{
+    width: 80%;
+    height: 10%;
+    /* border: 2px solid yellow; */
+    padding: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+nav ul img{
+    width: 12%;
+    height: 12%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
 
 /* div in evidenza */
 .inevidenza{
     margin-top: 70px;
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 2% 2%;
     width: 90%;
     display: flex;
@@ -132,7 +156,7 @@ nav{
 
 /* recently  */
 .recently{ 
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 2% 2%;
     width: calc(100vw - 10%);
     /* background-color: beige; */
@@ -143,8 +167,8 @@ nav{
 
 
 img{
-    width: 215px;
-    height: 215px;
+    width: 200px;
+    height: 200px;
     margin: 5px 10px;
     display: flex;
     justify-items: space-around;  
@@ -164,7 +188,7 @@ img{
 }
 
 .foryou{
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 2% 2%;
     width: calc(100vw - 10%);
     /* background-color: beige; */
@@ -174,7 +198,7 @@ img{
 }
 
 .popular{
-    margin-left: 10%;
+    margin-left: 13%;
     padding: 2% 2%;
     width: calc(100vw - 10%);
     /* background-color: beige; */
