@@ -5,10 +5,29 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    text-decoration: none;
+    /* color: gray; */
+    font-weight: 600;
+    color: gray;
+}
+li{
+    list-style-type: none;
+}
 
+.text{
+    margin-left: 10%;
+    padding: 2% 2%;
+}
+h2{
+    color: white;
+}
+h6{
+    color: lightslategray;
+}
 /* Header */
 header{
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.425);
     margin-left: 10%;
     width: calc(100vw - 10%);
     height: 70px;
@@ -22,6 +41,7 @@ header{
     z-index: 100;
 }
 
+
 button{
     font-size: 14px;
     font-weight: 600;
@@ -33,6 +53,7 @@ button{
     background-color: black;
     padding: 1% 2%;
 }
+
 
 /* main */
 main{
@@ -49,34 +70,51 @@ main{
     flex-wrap: wrap;
     overflow-y: auto;
     height: 100%;
-    background-color: blue;
+    background-color: #141922;
 }
+
 nav{
     width: 10%;
     height: calc(100% - 80px);
-    background-color: aqua;
+    background-color:#000000;
+    color: grey;
     position: fixed;
     top: 0;
     left: 0;
 }
 
-.recently{
+/* div in evidenza */
+.inevidenza{
     margin-top: 70px;
     margin-left: 10%;
-    width: calc(100vw - 10%);
-    background-color: beige;
+    padding: 2% 2%;
+    width: 90%;
+    /* background-color: palevioletred; */
     display: flex;
     justify-content: center;
+}
+.inevidenza ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+
+
+/* .recently  */
+.recently{ 
+    margin-left: 10%;
+    padding: 2% 2%;
+    width: calc(100vw - 10%);
+    /* background-color: beige; */
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.recently ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-.recently img{
+
+
+img{
     width: 200px;
     height: 200px;
     margin: 5px 7px;
@@ -86,20 +124,20 @@ nav{
 
 .foryou{
     margin-left: 10%;
+    padding: 2% 2%;
     width: calc(100vw - 10%);
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .popular{
     margin-left: 10%;
+    padding: 2% 2%;
     width: calc(100vw - 10%);
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -121,7 +159,7 @@ nav{
 footer{
     width: 100%;
     height: 80px;
-    background-color: #222222;
+    background-color: #282828;
     display: flex;
     flex-direction: row;
     align-items: center;
