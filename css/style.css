@@ -109,6 +109,8 @@ nav{
 .inevidenza ul {
     text-transform: uppercase;
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style:none;
     padding: 0px;
     align-content: center;
@@ -120,7 +122,15 @@ nav{
     padding:5px 10px;
 }
 
-/* .recently  */
+.inevidenza ul li a:hover, ul li a:focus {
+    color:white;
+
+}
+
+
+
+
+/* recently  */
 .recently{ 
     margin-left: 10%;
     padding: 2% 2%;
