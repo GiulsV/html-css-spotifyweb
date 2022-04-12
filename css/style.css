@@ -87,6 +87,7 @@ main{
 /* section colonna sx */
 .barrasx{
     width: 13%;
+    padding-left: 5px;
     /* border: 2px solid yellow; */
     height: calc(100% - 80px);
     background-color:#000000;
@@ -94,10 +95,9 @@ main{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 50;
 }
-/* nav{
-    border: 2px solid pink;
-} */
+
 .barrasx > img{
     width: 80%;
     height: 10%;
@@ -107,7 +107,6 @@ main{
 
 nav ul{
     list-style-type: none;
-    text-transform: uppercase;
 }
 nav ul img{
     width: 12%;
@@ -115,9 +114,43 @@ nav ul img{
     display: inline-block;
     vertical-align: middle;
 }
+/* playlist */
+.playlist{
+    width: 100%;
+    padding-top: 1%;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+}
+
+h3{
+    text-transform: uppercase;
+    color: white;
+    padding-top: 1%;
+    
+}
+
+.fa-plus{
+    padding: 4%;
+    border: 1px solid gray;
+    background-color: gray;
+    color: black;
+}
+
+.playlist ul{
+    list-style-type: none; 
+}
 
 
+/* User */
 
+.user{
+    width: 100%;
+    padding: 5%;
+    /* border: 1px solid yellow; */
+}
 
 /* div in evidenza */
 .inevidenza{
@@ -164,7 +197,32 @@ nav ul img{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.playbutton{
+    position: relative;
+}
 
+.play{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.playbutton:hover img {
+    opacity: 0.5;
+}
+  
+.playbutton:hover .play {
+    opacity: 1;
+}
+
+.fa-play-circle{
+    color: white;
+    font-size: 60px;
+}
 
 img{
     width: 200px;
