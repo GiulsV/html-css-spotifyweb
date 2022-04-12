@@ -44,7 +44,10 @@ ul {
     list-style-type: none;
 }
 
-
+.fa-play-circle{
+    font-size: 60px;
+    color: white;
+}
 
 
 
@@ -172,7 +175,7 @@ ul {
     width: calc(100% - 230px);
     float: left;
     height: 100%;
-    background: rgb(71, 42, 214);
+    background: rgb(10, 2, 44);
     overflow-y: auto;   
 }
 
@@ -214,6 +217,7 @@ ul {
 .content-box {
     padding: 100px 20px 20px;
 }
+
 /* content navigation */
 .content-nav {
     display: flex;
@@ -251,60 +255,76 @@ ul {
 
 /* immagini delle sezioni */
 
-#recently-played img,
-#created-for img,
-#popular-artist img{
-    width: 200px;
-    height: 200px;
-    margin: 5px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-items: space-around;  
+.section-intro {
+    margin-bottom: 20px;
 }
-
-.thumbnail-wrap{
+  
+.section-intro h2 {
+    margin-bottom: 5px;
+}
+  
+#recently-played ul,
+#created-for-user ul,
+#popular-artists ul {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    margin-left: -10px;
+}
+  
+li.thumbnail-wrap {
+    flex-basis: calc((100%/6) - 10px);
     text-align: center;
+    cursor: pointer;
     margin: 0 0 30px 10px;
 }
-
-/* overlay play button */
-.thumbnail-image{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  
+li.thumbnail-wrap img {
+    width: 100%;
 }
-
-.thumbnail-overlay{
-    width: fit-content;
-    transition: .5s ease;
-    opacity: 0;
+  
+.thumbnail-wrap .title {
+    font-size: 1.3em;
+}
+  
+.thumbnail-wrap .subtitle {
+    font-size: 1.1em;
+    color: #717171;
+}
+  
+.thumbnail-image {
+    position: relative;
+}
+  
+.thumbnail-image  .thumbnail-overlay {
+    display: inline-block;
     position: absolute;
-    top: 41%;
+    width: 100%;
+    height: 0%;
+    background-color: #000000a8;
+}
+  
+.thumbnail-image  .thumbnail-overlay i {
+    opacity: 0%;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* text-align: center; */
+    overflow: hidden;
 }
-
-.thumbnail-image:hover img {
-    opacity: 0.5;
+  
+.thumbnail-wrap:hover .thumbnail-overlay  {
+    height: 100%;
 }
-
-.thumbnail-image:hover .thumbnail-overlay {
-    opacity: 1;
-}
-
-.fa-play-circle{
-    color: white;
-    font-size: 60px;
-}
-
+  
 .thumbnail-wrap:hover  .thumbnail-overlay i {
     opacity: 100%;
 }
+
+
+
+
 
 
 
