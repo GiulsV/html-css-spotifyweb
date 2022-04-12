@@ -49,6 +49,9 @@ ul {
     color: white;
 }
 
+p{
+    color: #717171;
+}
 
 
 /* sidebar */
@@ -175,7 +178,7 @@ ul {
     width: calc(100% - 230px);
     float: left;
     height: 100%;
-    background: rgb(10, 2, 44);
+    background: #141922;
     overflow-y: auto;   
 }
 
@@ -290,7 +293,9 @@ li.thumbnail-wrap img {
     font-size: 1.1em;
     color: #717171;
 }
-  
+ 
+
+/* Hover immagini */
 .thumbnail-image {
     position: relative;
 }
@@ -324,19 +329,171 @@ li.thumbnail-wrap img {
 
 
 
-
-
-
-
 /* footer */
 
 footer{
     width: 100%;
     height: 90px;
+    color: #fff;
     background-color: #282828;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    font-size: 0.9em;
+  
+}
+
+.album .info,
+.album .name,
+.album img, 
+.album .favorites{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer > div {
+    padding: 15px 10px;
+    align-self: center;
+  }
+
+/* Album */
+.album {
+    flex-basis: 25%;
+    min-width: 150px;
+}
+  
+.album img {
+    width: 50px;
+    margin-right: 5px;
+}
+.album .album-title,
+.album .song-title,
+.album .favorites {
+    line-height: 15px;
+}
+  
+.album .song {
+    font-size: 0.8em;
+    color:#717171;
+}
+  
+.album .song a:hover {
+    text-decoration: underline;
+}
+  
+.album .favorites i {
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+
+/* Player Controls */
+
+.controls {
     text-align: center;
+    flex-basis: 50%;
+}
+  
+.player-buttons i {
+    margin: 0 5px;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+  
+.player-buttons i.fa-play-circle {
+    font-size: 1.8em;
+    margin: 0 10px;
+}
+  
+.player-buttons i.fa-play-circle:hover {
+    transform: scale(1.2);
+}
+  
+.controls {
+    flex-grow: 2;
+    min-width: 200px;
+}
+  
+.song-time-bar .current-time,
+.song-time-bar .control-bar,
+.whole-bar,
+.active-part-bar,
+.control-bar-circle
+.song-time-bar .end-time,
+.volume-controls .volume-bar {
+    display: inline-block;
+}
+  
+.control-bar {
+    position: relative;
+    width: 55%;
+    cursor: pointer;
+}
+  
+.whole-bar,
+.active-part-bar {
+    vertical-align: middle;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #717171;
+}
+  
+.active-part-bar {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 22%;
+    background-color: #fff;
+  
+}
+  
+.control-bar .control-bar-circle {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    background-color: #fff;
+    cursor: pointer;
+}
+  
+.control-bar:hover .active-part-bar {
+    background-color: #adff2f;
+}
+  
+.control-bar:hover .control-bar-circle {
+    display: inline-block;
+}
+
+
+/* Volume */  
+.volume {
+    flex-basis: 25%;
+    text-align: right;
+    min-width: 100px;
+}
+  
+.share i {
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+  
+.volume .volume-bar {
+    vertical-align: middle;
+    width: 50%;
+    min-width: 10%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #717171;
+}
+  
+.volume .share,
+.volume .control-volume {
+    display: inline;
+    line-height: 15px;
+}
+ 
+.control-volume .whole-bar {
+    width: 50%;
 }
