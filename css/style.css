@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -192,7 +191,7 @@ ul {
 }
 
 
-/* button */
+/* upgrade button */
 .upgrade-btn {
     padding: 10px 20px;
     border: 1px solid #fff;
@@ -227,13 +226,91 @@ ul {
 }
 .content-nav > li {
     margin-right: 15px;
-    /* position: relative; */
+    position: relative;
 }
+
+
+/* Section contenuto recently played, creato per, più popolari*/
+
+.intro {
+    margin-bottom: 20px;
+}
+  
+.intro h2 {
+    margin-bottom: 5px;
+}
+  
+#recently-played ul,
+#created-for ul,
+#popular-artists ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+
+/* immagini delle sezioni */
+
+#recently-played img,
+#created-for img,
+#popular-artist img{
+    width: 200px;
+    height: 200px;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;  
+}
+
+.thumbnail-wrap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 0 30px 10px;
+}
+
+/* overlay play button */
+.thumbnail-image{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.thumbnail-overlay{
+    width: fit-content;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+}
+
+.thumbnail-image:hover img {
+    opacity: 0.5;
+}
+
+.thumbnail-image:hover .thumbnail-overlay {
+    opacity: 1;
+}
+
+.fa-play-circle{
+    color: white;
+    font-size: 60px;
+}
+
+.thumbnail-wrap:hover  .thumbnail-overlay i {
+    opacity: 100%;
+}
+
 
 
 /* footer */
 
-/* footer{
+footer{
     width: 100%;
     height: 90px;
     background-color: #282828;
@@ -242,4 +319,4 @@ ul {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-} */
+}
