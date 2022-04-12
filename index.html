@@ -19,188 +19,115 @@
     
     <!-- Main -->
     <main>
-            <div class="container">
-                <!-- Header -->
-                <header>
-                    <button>
-                        <a href="#">effettua l'upgrade</a>
-                    </button>
-                </header>
-                <!-- section colonna sx -->
-                <section class="barrasx">
-
-                    <img src="img/logo.svg" alt="">
-                    <nav>
-                        <ul>
-                            <li><img src="img/home.svg" alt=""> Home</li>
-                            <li><img src="img/search.svg" alt=""> Cerca</li>
-                            <li><img src="img/libreria.svg" alt=""> La tua libreria</li>
-                        </ul>
-                    </nav>
-
-
-                    <div class="playlist">
-                        
-                        <h3>playlist</h3>
-
-                        <a href=""><i class="fas fa-plus"></i>Crea playlist</a>
-                       
-                       <ul>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                           <li>nome playlist</li>
-                       </ul>
-                    </div>
-                    <div class="user">
-                      <a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
-                      <hr>
-                      <a href=""><i class="far fa-user-circle"></i>John Doe</a>
-                    </div>
-                </section>
-                
-                <div class="inevidenza">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <!-- logo -->
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <!--  main navigation -->
+                <div class="main-nav">
                     <ul>
-                        <li><a href="">in eviedenza</a></li>
-                        <li><a href="">podcast</a></li>
-                        <li><a href="">classifiche</a></li>
-                        <li><a href="">generi e mood</a></li>
-                        <li><a href="">nuove uscite</a></li>
-                        <li><a href="">scopri</a></li>
+                        <li>
+                            
+                            <a href="#" class="active-link">
+                                <span class="active"></span>
+                                <img src="img/home.svg" alt="">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/search.svg" alt="">
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/libreria.svg" alt="">
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-
-                <div class="text">
-                    <h2>Recently Played</h2>
+            
+            <!-- PLaylist -->
+            <div class="playlist">
+                <h3>PLAYLIST</h3>
+                <div class="add-list-item">
+                  <a href="#">
+                    <span class="plus"><i class="fas fa-plus"></i></span>
+                    <span class="main-nav-text">Crea playlist</span>
+                  </a>
                 </div>
-                <div class="recently"> 
-                    <figure class="playbutton">
-                        <img src="img/metal_lifting.jpg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-
-                       <div class="play">
-                            <i class="far fa-play-circle"></i>
-                        </div>
-                        
-                    </figure> 
-                    <figure>
-                        <img src="img/stranger.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    <figure>
-                        <img src="img/aquietplace.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    <figure>
-                        <img src="img/split.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    <figure>
-                        <img src="img/cure.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    <figure>
-                        <img src="img/sinister.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-   
+                <div class="list-item">
+                  <ul>
+                    <li><a href="">Nome playlist</a></li>
+                    <li><a href="">Nome playlist</a></li>
+                    <li><a href="">Nome playlist</a></li>
+                    <li><a href="">Nome playlist</a></li>
+                    <li><a href="">Nome playlist</a></li>
+                    <li><a href="">Nome playlist</a></li>
+                    <li><a href="">Nome playlist</a></li>
+                  </ul>
                 </div>
-
-
-
-                <div class="text">
-                    <h2>Creato per John Doe</h2>
-                    <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
-                </div>
-                <div class="foryou">
-                    <figure>
-                        <img src="img/radar.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    <figure>
-                        <img src="img/mixdaily.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    
-                        
-                </div>
-
-
-
-                <div class="text">
-                    <h2>Artisti più popolari</h2>
-                    <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
-                </div>
-                <div class="popular">
-                    <figure>
-                        <img src="img/youg.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-                    <figure>
-                        <img src="img/einaudi.jpeg" alt="">
-                        <figcaption class="captionbold">
-                            Heavy Metal
-                        </figcaption>
-                        <figcaption class="captionsmall">
-                            Subtitle
-                        </figcaption>
-                    </figure> 
-
-                    
-                       
-                </div>
-   
+              </div>
             </div>
+              <!-- install app + user -->
+              <div class="sidebar-bottom">
+                <div class="install-app">
+                  <a href="#">
+                  <img src="img/download.svg" alt="download app">
+                  <span class="main-nav-text">Install app</span>
+                  </a>
+                </div>
+                <div class="user">
+                  <a href="#">
+                  <span class="profile-avatar">
+                    <img src="img/profile.svg" class="round" alt="">
+                  </span>
+                  <p class="main-nav-text user-name">Jhon Doe</p>
+                  </a>
+                </div>
+              </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="top-panel">
+              <a href="#" class="upgrade-btn">effettua l'upgrade</a>
+            </div>
+            <div class="content-box">
+              <nav>
+                <ul class="content-nav">
+                  <li>
+                    <span class="active"></span>
+                    <span><a href="" class="active-link">in evidenza</a></span>
+                  </li>
+                  <li>
+                    <span></span>
+                    <span><a href="">podcast</a></span>
+                  </li>
+                  <li>
+                    <span></span>
+                    <span><a href="">classifiche</a></span>
+                  </li>
+                  <li>
+                    <span></span>
+                    <span><a href="">generi e mood</a></span>
+                  </li>
+                  <li>
+                    <span></span>
+                    <span><a href="">nuove uscite</a></span>
+                  </li>
+                  <li>
+                    <span></span>
+                    <span><a href="">scopri</a></span>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+                
      
     </main>
     <!-- Footer fisso-->
